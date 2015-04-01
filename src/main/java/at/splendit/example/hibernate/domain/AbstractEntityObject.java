@@ -13,7 +13,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 @MappedSuperclass
-public abstract class AbstractEntityObject<T> implements Serializable {
+public abstract class AbstractEntityObject<T extends Serializable> implements Serializable {
 
 	protected static final long serialVersionUID = 1L;
 
