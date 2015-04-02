@@ -15,7 +15,7 @@ import org.springframework.context.ApplicationContext;
 import at.splendit.example.hibernate.domain.AbstractEntityObject;
 import at.splendit.example.hibernate.spring.SpringUtils;
 
-public class AbstractBasicDaoSupport<E extends AbstractEntityObject<I>, I extends Serializable> implements
+public abstract class AbstractBasicDaoSupport<E extends AbstractEntityObject<I>, I extends Serializable> implements
 		InterfaceBasicDaoSupport<E, I> {
 
 	private final static Logger log = LogManager.getLogger(AbstractBasicDaoSupport.class);
